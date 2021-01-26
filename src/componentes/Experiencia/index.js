@@ -1,10 +1,10 @@
 import React from "react";
 
 function Experiencia({ info }) {
-  console.log({ info });
+  
   return (
     <div className="experience">
-      <h2>Experiência Profissional</h2>
+      <h2>Capacitações e Habilidades</h2>
       {info.map((info) => (
         <div key={info.id} className="experience-item">
           <div>

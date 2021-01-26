@@ -17,13 +17,19 @@ function App() {
     contatos: [
       {
         id: 1,
-        tipo: "telefone",
-        contato: "19 99114-9390",
+        telefone: "19 99114-9390",
       },
       {
         id: 2,
-        tipo: "email",
-        contato: "patriciahedra@gmail.com",
+        email: "patriciahedra@gmail.com",
+      },
+      {
+        id: 3,
+        linkedin: "https://www.linkedin.com/in/patriciahedra/",
+      },
+      {
+        id: 4,
+        guthub: "https://github.com/patriciahoc",
       },
     ],
     educacao: [
@@ -31,29 +37,33 @@ function App() {
         id: 1,
         instituicao: "PUC Campinas",
         curso: "Serviço Social",
+        situacao: "Concluído",
       },
       {
         id: 2,
-        instituicao: "ETEC",
+        instituicao: "ETEC Centro Paula Souza",
         curso: "Técnico em Desenvolvimento de sistema",
+        situacao: "Cursando",
       },
     ],
     experiencia: [
       {
         id: 1,
-        cargo: "Front",
-        periodo: "Abril 2020 - atual",
-        empresa: "home office",
-        local: "Hortolândia-SP",
-        conteudo: "aprendi tudo que sei",
+        cargo: "SPTech Desenvolvimento Front-end",
+        periodo: "Julho 2020 - Dezembro 2019",
+        empresa: "Digital Innovation One Inc.",
+        local: "",
+        conteudo:
+          "Conceitos de desenvolvimento front-end atuação em projetos e no desenvolvimento web, por meio de componentes da interface de usuários.",
       },
       {
         id: 2,
-        cargo: "Back",
-        periodo: "Agosto 2018 - Agosto 2019",
-        empresa: "CIA",
-        local: "Boston",
-        conteudo: "Fazia nada e ganhava mal",
+        cargo: "Trilha ReactJs",
+        periodo: "Janeiro 2021 - Março 2021",
+        empresa: "Campinas Tech Talents",
+        local: "",
+        conteudo:
+          "Programa de formação e qualificação profissional de novos desenvolvedores nas principais linguagens de programação demandadas pelo mercado.",
       },
     ],
   };
@@ -74,12 +84,14 @@ function App() {
 
           <button onClick={exibirContato}>Mostrar Contatos</button>
 
-          {mostrarContato && <Contatos itens={resposta.contatos} />}
+          {mostrarContato && <Contatos />}
         </div>
 
         <Formacao obj={resposta.educacao} />
       </aside>
       <Experiencia info={resposta.experiencia} />
+
+      
     </main>
   );
 }

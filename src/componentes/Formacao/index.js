@@ -7,8 +7,9 @@ function Formacao({ obj }) {
       {obj.map((obj) => (
         <div className="lista-de-formacao">
           <li key={obj.id}>
-            <h4>{obj.instituicao}</h4>
+            <h4>{obj.instituicao}</h4>            
             <p>{obj.curso}</p>
+            <p>{obj.situacao}</p>
           </li>
         </div>
       ))}
