@@ -89,10 +89,10 @@ function App() {
 
         <Formacao obj={resposta.educacao} />
       </aside>
-     
+      <section>
         <Experiencia info={resposta.experiencia} />
+      </section>
       
-     
     </main>
   );
 }
