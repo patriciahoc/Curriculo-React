@@ -50,7 +50,7 @@ function App() {
       {
         id: 1,
         cargo: "SPTech Desenvolvimento Front-end",
-        periodo: "Julho 2020 - Dezembro 2019",
+        periodo: "Abril 2020 - Dezembro 2019",
         empresa: "Digital Innovation One Inc.",
         local: "",
         conteudo:
@@ -89,9 +89,10 @@ function App() {
 
         <Formacao obj={resposta.educacao} />
       </aside>
-      <Experiencia info={resposta.experiencia} />
-
+     
+        <Experiencia info={resposta.experiencia} />
       
+     
     </main>
   );
 }

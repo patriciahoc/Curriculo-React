@@ -10,7 +10,6 @@ function Experiencia({ info }) {
           <div>
             <h4>{info.cargo}</h4>
             <span>{info.periodo}</span>
-
             <strong>{info.empresa}</strong>
             <span>{info.local}</span>
           </div>

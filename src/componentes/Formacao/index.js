@@ -5,8 +5,8 @@ function Formacao({ obj }) {
     <div className="sidebar">
       <h3>Educação</h3>
       {obj.map((obj) => (
-        <div className="lista-de-formacao">
-          <li key={obj.id}>
+        <div key={obj.id} className="lista-de-formacao">
+          <li >
             <h4>{obj.instituicao}</h4>            
             <p>{obj.curso}</p>
             <p>{obj.situacao}</p>

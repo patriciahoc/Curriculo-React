@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Tinos:400,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Tinos:400,700&display=swap");
 
 * {
   margin: 0;
@@ -20,16 +19,16 @@ main {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 3fr;
-    grid-template-rows: 224px 141px;
+  grid-template-rows: 195px 90px;
   grid-template-areas:
-    'sidebar content content'
-    'perfil-sidebar perfil perfil'
-    'contact-sidebar experience experience'
-    'education-sidebar experience experience'
+    "sidebar content content"
+    "perfil-sidebar perfil perfil"
+    "contact-sidebar experience experience"
+    "education-sidebar experience experience";
 }
 
 button {
-  background:  #735d78;
+  background: #735d78;
   border: none;
   padding: 5px 10px;
   font-size: 20px;
@@ -40,7 +39,7 @@ button {
 }
 
 button:hover {
-  background-color: #b392ac
+  background-color: #b392ac;
 }
 
 aside {
@@ -50,7 +49,7 @@ aside {
 
 h3 {
   position: relative;
-  color:  #735d78;
+  color: #735d78;
   text-transform: uppercase;
   border-bottom: 2px solid;
   padding-bottom: 5px;
@@ -58,45 +57,43 @@ h3 {
 }
 h3::after {
   position: absolute;
-  content: '';
+  content: "";
   padding: 3px 16px;
-  background:  #735d78;
+  background: #735d78;
   bottom: -4px;
   right: 0px;
 }
 
 .experience {
-  
   margin: 20px;
-    max-width: 760px;
-
+  max-width: 760px;
 }
-  .experience h2 {
-    position: relative;
-    color: #2b2b30;
-    font-size: 19px;
-    text-transform: uppercase;
-    border-bottom: 2px solid;
-    padding-bottom: 5px;
-    margin-bottom: 30px;
-  }
-   .experience h2::after {
-      position: absolute;
-      content: "";
-      padding: 3px 65px;
-      background: #2b2b30;
-      bottom: -4px;
-      left: 0px;
-    }
+.experience h2 {
+  position: relative;
+  color: #2b2b30;
+  font-size: 19px;
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+.experience h2::after {
+  position: absolute;
+  content: "";
+  padding: 3px 65px;
+  background: #2b2b30;
+  bottom: -4px;
+  left: 0px;
+}
 
 .experience-item {
   display: flex;
 }
-.experience-item  div {
-    border-right: 2px solid #2b2b30;
-  }
+.experience-item div {
+  border-right: 2px solid #2b2b30;
+}
 
-.experience-item  p {
+.experience-item p {
   border-bottom: 2px solid #2b2b30;
   flex-basis: 80%;
   padding: 20px;
@@ -104,16 +101,16 @@ h3::after {
   text-align: justify;
 }
 
-.experience-item  h4 {
+.experience-item h4 {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 
-.experience-item  date,
+.experience-item date,
 .experience-item span {
   display: block;
-  
+
   padding-bottom: 20px;
   font-size: 14px;
 }
@@ -134,47 +131,53 @@ h3::after {
   padding: 50px 40px 20px;
   color: #fff;
 }
-.sidebar  li {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-.sidebar  p,
-.sidebar  a {
-    font-size: 14px;
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
+.sidebar li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sidebar li:first-child{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+.sidebar p,
+.sidebar a {
+  font-size: 14px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+.sidebar svg {
+  margin: 0 10px;
 }
 
 .lista-de-contatos {
   list-style: none;
   line-height: 30px;
+  
 }
 
 .item-contato {
-  padding-right: 15px;
   text-decoration: none;
 }
-.item-contato  h4 {
-  height: 20px;
+.item-contato h4 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
   font-size: 15px;
   margin-top: 10px;
 }
 
 .lista-de-formacao li {
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 15px 0;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 15px 0;
+
 }
 
 .lista-de-formacao li:first-child {
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
 }
 
-.lista-de-formacao  h4 {
+.lista-de-formacao h4 {
   margin-bottom: 5px;
 }
 
@@ -183,8 +186,7 @@ h3::after {
 }
 
 .perfil img {
-    max-width: 100%;
-    height: 287px;
+  height: 287px;
 }
 
 .biografia {
@@ -195,8 +197,8 @@ h3::after {
   margin-left: 15px;
 }
 
-.biografia  h1 {
-  font-size: 60px;
+.biografia h1 {
+  font-size: 45px;
   color: #535458;
   font-family: "Tinos", serif;
   text-transform: uppercase;
@@ -208,7 +210,7 @@ h3::after {
 }
 
 .ocupacao {
-  color:  #735d78;
+  color: #735d78;
   background-color: #2b2b30;
   font-size: 21px;
   text-transform: uppercase;
@@ -243,55 +245,52 @@ h3::after {
 
 .perfil-profissional {
   grid-area: perfil;
-  background-color:  #735d78;
+  background-color: #735d78;
   padding: 10px 30px;
   display: flex;
   align-items: center;
-  
 }
-.perfil-profissional  p {
+.perfil-profissional p {
   color: #fff;
   line-height: 25px;
-  
 }
-@media (max-width: 720px){
-main{
-  max-width: 95%;
-  padding-top: 10px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 231px 153px;
-  grid-template-areas:
-      'sidebar content content'
-      'perfil-sidebar perfil perfil'
-      'contact-sidebar experience experience'
-      'education-sidebar experience experience';
-}
-.perfil img{
-  height: 230px;
-}
-.biografia{
-  margin-left: 15px;
-}
-.biografia h1{
-  font-size: 43px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
+@media (max-width: 720px) {
+  main {
+    max-width: 95%;
+    padding-top: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 231px 153px;
+    grid-template-areas:
+      "sidebar content content"
+      "perfil-sidebar perfil perfil"
+      "contact-sidebar experience experience"
+      "education-sidebar experience experience";
+  }
+  .perfil img {
+    height: 230px;
+  }
+  .biografia {
+    margin-left: 15px;
+  }
+  .biografia h1 {
+    font-size: 43px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  .titulo::before {
+    left: 30%;
+  }
+  .ocupacao {
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
 
-  
-}
-.titulo::before{
-  left: 30%;
-}
-.ocupacao{
-  letter-spacing:normal;
-  font-size: 16px;
-  padding: 10px 15px;
-}
-
-.perfil-profissional p{
-  line-height: 17px;}
+  .perfil-profissional p {
+    line-height: 17px;
+  }
 }
