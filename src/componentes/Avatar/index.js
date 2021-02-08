@@ -4,7 +4,7 @@ import foto from "../../images/foto.png";
 function Avatar() {
   return (
     <div className="perfil">
-      <img src={foto} alt="Perfil" />
+      <img src={foto} alt="Foto" />
     </div>
   );
 }

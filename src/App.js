@@ -5,13 +5,14 @@ import Contatos from "./componentes/Contatos";
 import Formacao from "./componentes/Formacao";
 import Experiencia from "./componentes/Experiencia";
 import "./App.css";
+import Informacao from "./componentes/Informacao";
 
 function App() {
   const fakeAPI = {
     nome: "Patricia Hedra de Oliveira Costa",
     ocupacao: "Developer | Front-End | Javascript | ReactJS",
     resumo:
-      "Em trasição de carreia onde busco me tornar uma pessoa desenvolvedora, com objetivo de me inserir na área de Front-end.",
+      "Em transição de carreira, buscando me tornar uma pessoa desenvolvedora front-end.",
     perfilProfissional:
       "Tenho 4 anos de experiência operacional, e 2 anos em suporte na área de marketing, em restaurante de Fast-Food tendo desenvolvido um olhar crítico para a importância das estratégias de inovações, buscando formas de garantir experiências positivas para as pessoas.",
     contatos: [
@@ -66,6 +67,43 @@ function App() {
           "Programa de formação e qualificação profissional de novos desenvolvedores nas principais linguagens de programação demandadas pelo mercado.",
       },
     ],
+    complemento: [
+      {
+        id: 1,
+        ocupacao: "Mentee",
+        programa: "Programa de Mentoria 2020",
+        local: "Comunidade Mulheres de Produto",
+        ano: "2020",
+      },
+      {
+        id: 2,
+        ocupacao: "Gestão",
+        programa: "Centro Acadêmico de Serviço Social",
+        local: "PUC Campinas",
+        ano: "2017/2019",
+      },
+      {
+        id: 3,
+        ocupacao: "Facilitadora",
+        programa: "Centro Interdisciplinar de atenção ao PCD",
+        local: "PUC Campinas",
+        ano: "2017",
+      },
+      {
+        id: 4,
+        ocupacao: "Facilitadora",
+        programa: "Projeto de Extensão",
+        local: "PUC Campinas",
+        ano: "2017",
+      },
+      {
+        id: 5,
+        ocupacao: "Articuladora",
+        programa: "Projeto “Grupo de Vivência Cooperativa e Solidária”",
+        local: "PUC Campinas",
+        ano: "2019",
+      },
+    ],
   };
   const [resposta] = useState(fakeAPI);
   const [mostrarContato, setMostratContato] = useState(false);
@@ -76,6 +114,7 @@ function App() {
   return (
     <main>
       <Avatar />
+
       <Bio resposta={resposta} />
 
       <aside>
@@ -89,10 +128,9 @@ function App() {
 
         <Formacao obj={resposta.educacao} />
       </aside>
-      <section>
-        <Experiencia info={resposta.experiencia} />
-      </section>
-      
+
+      <Experiencia info={resposta.experiencia} />
+      <Informacao comp={resposta.complemento} />
     </main>
   );
 }
